@@ -1,0 +1,242 @@
+<mxfile host="65bd71144e">
+    <diagram id="vDX-LRA78k9DUuCw6Gxx" name="Page-1">
+        <mxGraphModel dx="1072" dy="515" grid="0" gridSize="1" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0" adaptiveColors="simple">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="PARCIALES HISTORIA DE USUARIO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="49" y="11" width="354" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="IDENTIFICAR:&lt;div&gt;ROLES&lt;/div&gt;&lt;div&gt;1) USUARIO AUTENTICADO&lt;/div&gt;&lt;div&gt;2) CONSERJE&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="49" y="60" width="213" height="91" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="REQUERIMIENTOS:&lt;div&gt;1) RESERVAR HOSPEDAJE&lt;/div&gt;&lt;div&gt;2) REALIZAR CHECK IN&lt;/div&gt;&lt;div&gt;3) REALIZAR CHECK OUT&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="284" y="59" width="203" height="92" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="REGLAS DE NEGOCIO&lt;div&gt;1) FECHA INGRESO DENTRO DE LOS 90 DIAS DE LA FECHA ACTUAL&lt;/div&gt;&lt;div&gt;1) ESTADIA NO PUEDE DURAR MAS DE 15 DIAS&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2) SOLO SE PERMITE REALIZAR EL CHECK IN DENTRO DE LAS 10AM HASTA LAS 23:59PM&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3) SOLO SE PUEDE REALIZAR CHECK OUT A HABITACIONES SIN GASTO&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="525" y="11" width="263" height="228" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="258" width="746" height="186" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;b&gt;ID&lt;/b&gt;: Reservar hospedaje" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="56" y="268" width="206" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;b&gt;TITULO&lt;/b&gt;: Como usuario autenticado quiero realizar una reserva para poder hospedarme en el hotel" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="59" y="313" width="708" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;b&gt;REGLAS DE NEGOCIO:&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 15px; background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;FECHA INGRESO DENTRO DE LOS 90 DIAS DE LA FECHA ACTUAL&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 15px; background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ESTADIA NO PUEDE DURAR MAS DE 15 DIAS&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="59" y="382" width="708" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;b&gt;CRITERIOS DE ACEPTACION: Reservar hospedaje&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="461" width="443" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;b&gt;Escenario 1: Reserva exitosa&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt; una fecha actual 25/11/2025, una fecha de ingreso 30/11/2025, fecha de &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;egreso 05/12/2025 y un hotel &quot;WDhotels&quot; que pertenece a la cadena hotelera&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt; el usuario autenticado &quot;Juan Perez&quot;, ingresa la fecha de ingreso &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;30/11/2025&quot;, fecha de egreso &quot;05/12/2025&quot;, hotel &quot;WDhotels&quot; y cantidad de &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;personas 4&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;ENTONCES&lt;/b&gt; el sistema registra la reserva, envia un correo electronico con el &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;codigo de reserva y un enlace para continuar con el pago&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="491" width="698" height="167" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;b&gt;Escenario 2: Reserva fallida por superar el plazo a 90 dias&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt; una fecha actual 25/11/2025 y una fecha de ingreso 20/03/2026 (todos los &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;siguientes datos se ponen?) PREGUNTAR&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt; el usuario autenticado &quot;Juan Perez&quot;, ingresa la fecha de ingreso &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;20/03/2026&quot;, fecha de egreso &quot;25/03/2026&quot;, hotel &quot;WDhotels&quot; y cantidad de &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;personas 4&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;ENTONCES&lt;/b&gt; el sistema informa un error por superar el plazo de 90 dias en base a &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;la fecha actual&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="69" y="684" width="698" height="167" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;b&gt;Escenario 3: Reserva fallida por superar el plazo de estadia a 15 dias&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt; una fecha de ingreso 05/01/2026 y una fecha de egreso 25/01/2026 &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;(PREGUNTAR: hace falta poner la fecha actual)&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt; el usuario autenticado &quot;Juan Perez&quot;, ingresa la fecha de ingreso &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;05/01/2026&quot;, fecha de egreso &quot;25/01/2026&quot;, hotel &quot;WDhotels&quot; y cantidad de &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;personas 4&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;ENTONCES&lt;/b&gt; el sistema informa un error por superar el plazo de estadia a 15 dias&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="69" y="869" width="698" height="167" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;b&gt;Escenario 4: Reserva fallida por hotel inexistente a la cadena hotelera&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt;&amp;nbsp;un hotel &quot;JM&quot; no perteneciente a la cadena hotelera&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt; el usuario autenticado &quot;Juan Perez&quot;, ingresa la fecha de ingreso &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;05/01/2026&quot;, fecha de egreso &quot;25/01/2026&quot;, hotel &quot;JM&quot; y cantidad de &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;personas 4&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;ENTONCES&lt;/b&gt; el sistema informa un error por ingresar un hotel inexistente a la &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;cadena hotelera&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="66" y="1054" width="698" height="167" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="49" y="1317" width="746" height="156" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="ID: Realizar check in" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="1327" width="173" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="TITULO: Como usuario autenticado quiero realizar el check in para poder ingresar a la habitacion del hotel" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="63" y="1372" width="708" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="REGLAS DE NEGOCIO:&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 15px; background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Solo se permite realizar el check in despues de las 10am hasta las 23:59pm&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="61" y="1422" width="708" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="&lt;b&gt;Escenario 1: Check in exitoso&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt;&amp;nbsp;un codigo de reserva valido &quot;253035&quot;, perteneciente a la fecha actual y en &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;el horario de las 11am&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt; el usuario autenticado &quot;Pedro Gomez&quot; ingresa el codigo de reserva &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;253035&quot; y le da al boton &quot;confirmar check in&quot;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;ENTONCES&lt;/b&gt; el sistema registra el check in, informa la habitacion asignada, envia &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;un mensaje al conserje para guiar al usuario y otro mensaje a los botones para &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;que se hagan cargo de las valijas.&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="68" y="1490" width="708" height="167" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;b&gt;Escenario 2: Check in fallido por realizar fuera del horario establecido&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt;&amp;nbsp;que son las 9am (PREGUNTAR, esta completo?)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt; el usuario autenticado &quot;Pedro Gomez&quot; ingresa el codigo de reserva &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;253035&quot; y le da al boton &quot;confirmar check in&quot;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;ENTONCES&lt;/b&gt; el sistema informa que aun no se encuentran habilitados los ingresos &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;al hotel&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="66" y="1670" width="708" height="167" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;b&gt;Escenario 3: Check in fallido por codigo de reserva inexistente&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="68" y="1830" width="708" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;b&gt;Escenario 4: Check in fallido por reserva por perteneciente a la fecha actual&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="68" y="1861" width="708" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="1989" width="746" height="156" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="ID: Realizar check out" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="56" y="1999" width="181" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="TITULO: Como conserje del hotel quiero realizar el check out para liberar las habitaciones del hotel" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="59" y="2044" width="708" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="REGLAS DE NEGOCIO:&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 15px; background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Solo se permite realizar check out aquellas habitaciones sin gasto&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="57" y="2094" width="708" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;b&gt;Escenario 1: Check out exitoso&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt;&amp;nbsp;un numero de habitacion &quot;85&quot; valido y que no cuenta con gastos pendientes&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt; el conserje del hotel ingresa el numero de habitacion &quot;85&quot; y presiona el &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;boton &quot;realizar check out&quot;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ENTONCES&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt; el sistema registra el check out y envia un mensaje a las mucamas &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;del hotal para realizar la limpieza de la habitacion&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="59" y="2158" width="708" height="139" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;b&gt;Escenario 2: Check out fallido por numero de habitacion inexistente&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt;&amp;nbsp;un numero de habitacion &quot;205&quot; inexistente en el hotel&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CUANDO&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt; el conserje del hotel ingresa el numero de habitacion &quot;205&quot; y presiona el &lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;boton &quot;realizar check out&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ENTONCES&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt; el sistema informa al conserje que el numero de habitacion es &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;inexistente.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="2307" width="708" height="139" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;b&gt;Escenario 3: Check out fallido por habitacion con gastos pendientes&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;DADO&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;un numero de habitacion &quot;70&quot; valido que cuenta con gastos pendientes&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CUANDO&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt; el conserje del hotel ingresa el numero de habitacion &quot;70&quot; y presiona el &lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;boton &quot;realizar check out&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ENTONCES&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt; el sistema informa al conserje que no se pueda realizar la operacion &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;hasta que se abonen los gastos realizados.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="49" y="2456" width="708" height="139" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="PARCIAL HISTORIA DE USUARIO 28/11/25" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="219.5" y="2648" width="401" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;IDENTIFICAR&amp;nbsp;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;ROLES:&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;1) INVESTIGADOR NO REGISTRADO&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;2) INVESTIGADOR REGISTRADO&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;3) INVESTIGADOR AUTENTICADO&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="6" y="2691" width="276" height="91" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;REQUERIMIENTOS:&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;1) SOLICITAR TURNO CAPSULA&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;2) REGISTRAR INVESTIGADOR&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;3) INICIAR SESION&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;4) CERRAR SESION&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="247" y="2699" width="237" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;REGLAS DE NEGOCIO&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;1) REQ (2): CORREO UNICO&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;2) REQ (2): EDAD MAYOR A 21 Y PUNTAJE SUPERIOR A 200&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;3) REQ (3): SOLO SE PERMITEN 3 INTENTOS PARA INICIAR SESION&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;4) REQ (1): SE PERMITEN SOLAMENTE SALTOS A PERIODOS HISTORICAMENTE DE BAJO RIESGO.&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="471" y="2678" width="350" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="39" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="220" y="2728" as="sourcePoint"/>
+                        <mxPoint x="270" y="2678" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="" style="endArrow=classic;html=1;entryX=-0.001;entryY=0.702;entryDx=0;entryDy=0;exitX=0.707;exitY=0.615;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="38" target="39" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="221" y="2729" as="sourcePoint"/>
+                        <mxPoint x="248" y="2747" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="205.5" y="2765" as="sourcePoint"/>
+                        <mxPoint x="247" y="2729" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="" style="endArrow=classic;html=1;entryX=0.008;entryY=0.908;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="39" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="206.5" y="2766" as="sourcePoint"/>
+                        <mxPoint x="248" y="2730" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="40" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="361" y="2766" as="sourcePoint"/>
+                        <mxPoint x="478" y="2765" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="417" y="2757"/>
+                            <mxPoint x="451" y="2743"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="" style="endArrow=classic;html=1;entryX=-0.006;entryY=0.354;entryDx=0;entryDy=0;exitX=0.707;exitY=0.615;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" target="40" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="433" y="2748" as="sourcePoint"/>
+                        <mxPoint x="472" y="2741" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="38" y="2826" width="746" height="156" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="ID: Solicitar turno" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="49" y="2836" width="143" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="TITULO: Como investigador autenticado quiero solicitar un turno en la capsula para realizar el viaje en el tiempo" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="52" y="2881" width="708" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="REGLAS DE NEGOCIO:&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 15px; background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;* Se permiten solamente saltos a periodos historicamente de bajo riesgo&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="2931" width="708" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="&lt;b&gt;Escenario 1: Solicitud exitosa&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt;&amp;nbsp;la capsula &quot;3&quot; con fecha 12/05/2026, donde la capsula esta disponible para &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;tal fecha y año del salto 1998 no riesgoso&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt;&amp;nbsp;el investigador autenticado selecciona la capsula &quot;3&quot;, fecha de &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;salto &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;12/05/2026, año 1998 y presiona &quot;solicitar turno&quot;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ENTONCES&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;el sistema registrar la solicitud con exito, envia un mail al investigador &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;con la fecha y año ingresado, y un codigo de referencia a la reserva&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="52" y="2995" width="708" height="139" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;b&gt;Escenario 2: Solicitud fallida por año riesgoso&lt;br&gt;&lt;/b&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;DADO&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;el año 1895 de alto riesgo&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CUANDO&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;el investigador autenticado selecciona la capsula &quot;a&quot;, fecha 20/03/2026,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;año 1895 y presiona &quot;solicitar turno&quot;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ENTONCES&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;el sistema muestra un mensaje de advertencia indicando &quot;destino&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;temporal clasificado como riesgoso. Selecciono otro año&quot;.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="48" y="3144" width="708" height="139" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="&lt;b&gt;Escenario 3: Solicitud fallida por capsula no disponible&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="42" y="3293" width="708" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="33" y="3360" width="746" height="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="ID: Registrar investigador" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="43" y="3370" width="211" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="TITULO: Como investigador no registrador quiero registrarme al sistema para solicitar turnos en el tiempo" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="3407" width="708" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="REGLAS DE NEGOCIO:&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 15px; background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;* Solo se permite edad mayor a 21&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 15px; background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;* Solo se permite puntaje superior a 200&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;* El correo debe ser unico&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="3443" width="708" height="87" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;b&gt;Escenario 1: Registro exitoso&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt;&amp;nbsp;un año de nacimiento 1998, puntaje 300 y un correo &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;juanperez@gmail.com&quot; no &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;registrado en el sistema&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt;&amp;nbsp;el investigador ingresa nombre &quot;Juan&quot;, apellido &quot;Perez&quot;, correo &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;juanperez@gmail.com&quot;, año de nacimiento 1998, puntaje acumulado 300 y &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;presiona &quot;registrar&quot;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ENTONCES&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;el sistema registra al usuario con exito y envia una clave por el correo &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;registrado&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="42" y="3548" width="708" height="176" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&lt;b&gt;Escenario 2: Registro fallido por correo ya registrado&lt;br&gt;&lt;/b&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;DADO&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;un correo &quot;Lucasc@gmail.com&quot; ya registrado en el sistema&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CUANDO&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;el investigador ingresa nombre &quot;Lucas&quot;, apellido &quot;Casal&quot;, &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;correo&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&quot;lucasc@gmail.com&quot;, año de nacimiento 1997, puntaje acumulado &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;250&amp;nbsp;y&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;presiona &quot;registrar&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ENTONCES&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;el sistema informa &quot;el correo ingresado ya se encuentra registrado&quot;.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="3728" width="708" height="139" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="&lt;b&gt;Escenario 3:&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;Registro fallido por edad inferior a 21&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="3865" width="708" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="" style="endArrow=classic;html=1;entryX=-0.003;entryY=0.224;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="40" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="430" y="2749" as="sourcePoint"/>
+                        <mxPoint x="470" y="2723" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="&lt;b&gt;Escenario 4:&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;Registro fallido por puntaje inferior a 200&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="43" y="3906" width="708" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="38" y="3982" width="746" height="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="ID: Cerrar sesion" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="48" y="3992" width="147" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="TITULO: Como investigador autenticado quiero cerrar sesion para salir de la plataforma" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="4029" width="708" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="REGLAS DE NEGOCIO:&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 15px; background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;--&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="4065" width="708" height="87" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="&lt;b&gt;Escenario 1: Cierre de sesion exitoso&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt;&amp;nbsp;un investigador activo / una sesion iniciada&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt;&amp;nbsp;el investigador selecciona la opcion &quot;cerrar sesion&quot;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ENTONCES&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;el sistema registra el cierre de sesion y deshabilita las opciones &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;disponibles&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="48" y="4175" width="708" height="113" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="38" y="4344" width="746" height="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="ID: Iniciar sesion" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="48" y="4354" width="148" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="TITULO: Como investigador registrado quiero iniciar sesion al sistema para ingresar a la plataforma" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="52" y="4393" width="708" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="REGLAS DE NEGOCIO:&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 15px; background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;* Solo se permiten 3 intentos&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="4427" width="708" height="87" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="&lt;b&gt;Escenario 1: Inicio de sesion exitoso&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;DADO&lt;/b&gt;&amp;nbsp;un correo &quot;lucasc@gmail.com&quot; registrado, clave &quot;123456&quot; valido y sin tener &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;la cuenta suspendida&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;CUANDO&lt;/b&gt;&amp;nbsp;el investigador ingresa el correo&amp;nbsp;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&quot;lucasc@gmail.com&quot;, clave &quot;123456&quot; y &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;presiona &quot;iniciar sesion&quot;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ENTONCES&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;el sistema registra el inicio y habilita las funciones para el usuario&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="47" y="4532" width="708" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="&lt;b&gt;Escenario 2: Inicio de sesion fallido por correo incorrecto&lt;br&gt;&lt;/b&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;DADO&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;un correo &quot;Lucasc@gmail.com&quot; ya registrado en el sistema&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CUANDO&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;el investigador ingresa nombre &quot;Lucas&quot;, apellido &quot;Casal&quot;, &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;correo&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&quot;lucasc@gmail.com&quot;, año de nacimiento 1997, puntaje acumulado &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;250&amp;nbsp;y&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;presiona &quot;registrar&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ENTONCES&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;&amp;nbsp;el sistema informa &quot;el correo ingresado ya se encuentra registrado&quot;.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="4683" width="708" height="139" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="&lt;b&gt;Escenario 3: Inicio de sesion fallido por clave incorrecto - 1er intento&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="38" y="4829" width="708" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="&lt;b&gt;Escenario 6: Inicio de sesion fallido por cuenta suspendida&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="38" y="4925" width="708" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="&lt;b&gt;Escenario 4: Inicio de sesion fallido por clave incorrecto - 2do intento&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="38" y="4863" width="708" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;b&gt;Escenario 5: Inicio de sesion fallido por clave incorrecto - 2do intento&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="38" y="4895" width="708" height="45" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
