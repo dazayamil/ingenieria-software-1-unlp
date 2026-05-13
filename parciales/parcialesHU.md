@@ -101,6 +101,7 @@ HU_02:
 
 
 ### Parcial 3:  Cadena de gimnasios
+![Parcial 3](parcial%201ra%20fecha%202025%20inge1.jpeg)
 
 HU_01:
 *ID:*  Solicitar turno
@@ -137,10 +138,34 @@ HU_02:
     CUANDO el socio registrado ingresa dia "Lunes", hora "18:00" y presiona "Cancelar turno"
     ENTONCES el sistema libera el cupo, registra la cancelacion e informa "Cancelacion de turno exitoso".
 
-*Escenario 1:* Cancelacion fallida por
-    DADO un socio registrado que esta autenticado en el sistema y con las condiciones de cancelacion son adecuadas
+*Escenario 2:* Cancelacion fallida por no cumplir el tiempo de anticipacion
+    DADO un socio registrado que esta autenticado en el sistema y con las condiciones de cancelacion no adecuadas
     CUANDO el socio registrado ingresa dia "Lunes", hora "18:00" y presiona "Cancelar turno"
-    ENTONCES el sistema libera el cupo, registra la cancelacion e informa "Cancelacion de turno exitoso".
+    ENTONCES el sistema deniega la cancelacion e informa "La cancelacion debe realizar con 1 hora de anticipacion al horario de clase"
+
+HU_03:
+*ID:*  Crear clase
+*TITULO*: Como administrador registrado quiero crear nuevas clases para mantener actualizada la oferta de actividades
+*REGLAS DE NEGOCIO:*
+    - No se permiten clases superpuestas en la misma sala, dia y hora.
+    - Un instructor no puede tener asignados mas de tres clases en un mismo dia
+
+*CRITERIOS DE ACEPTACION:*
+*Escenario 1:* Creacion de clase exitosa
+    DADO un administrador registrado que esta autenticado en el sistema y la sala "A" esta libre el lunes a las 10hs
+    CUANDO el administrador registrado ingresa sede "La plata", clase "Funcional", sala "A", dni instructor 91256413, capacidad maxima 20, dia "Lunes", hora "10:00" y presiona "Crear clase"
+    ENTONCES el sistema registra la clase nueva e informa "Clase nueva creada con exito".
+
+*Escenario 2:* Creacion de clase fallida por sala ocupada
+    DADO que en la sala "B" ya existe una clase de "Yoga" el martes a las 16:00hs
+    CUANDO el administrador registrado ingresa sede "City bell", clase "Funcional", sala "B", dni instructor 98521563, capacidad maxima 15, dia "Martes", hora "16:00" y presiona "Crear clase"
+    ENTONCES el sistema deniega la solicitud e informa "Sala ocupada en el dia y hora seleccionado"
+
+*Escenario 3:* Creacion de clase fallida por limite de instructor alcanzado
+    DADO que el instructor con DNI "30.123.456" ya tiene 3 clases programdas para el dia lunes
+    CUANDO el administrador registrado ingresa sede "Ringuelet", clase "Crossfit", sala "C", dni instructor "30.123.456", capacidad maxima 30, dia "Lunes", hora "19:00" y presiona "Crear clase"
+    ENTONCES el sistema deniega la solicitud e informa "Instructor alcanzo el maximo de clase por dia permitido"
+
 
 
 
