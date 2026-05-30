@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Página-1" id="vmueesYX7ZxMUFYT4lBa">
-        <mxGraphModel dx="769" dy="475" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1050" dy="394" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1520,6 +1520,170 @@
                             <mxPoint x="250" y="1822.62"/>
                         </Array>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="380" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63); font-size: medium;&quot;&gt;Se desea modelar el camino hacia la costa Atlántica.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;Los&amp;nbsp; vehículos&amp;nbsp; llegan&amp;nbsp; desde&amp;nbsp; dos&amp;nbsp; arterias diferentes e intentan ingresar a una rotonda la cual&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;tiene una capacidad máxima de 10 autos. Cuando salen de la rotonda, los vehículos pueden&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;optar&amp;nbsp; por&amp;nbsp; la&amp;nbsp; ruta&amp;nbsp; nacional&amp;nbsp; 2&amp;nbsp; o&amp;nbsp; por la ruta 11. En la ruta 11 existen 2 controles. En el primer&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;control hay dos oficiales que pueden controlar a los vehículos simultáneamente. Cada oficial&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;controla un vehículo por vez.&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;En el segundo control hay un solo oficial que verifica&amp;nbsp; de a pares de autos, es decir, para que el&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;oficial&amp;nbsp; del&amp;nbsp; segundo&amp;nbsp; control&amp;nbsp; empiece&amp;nbsp; a&amp;nbsp; verificar,&amp;nbsp; deben&amp;nbsp; ingresar&amp;nbsp; al&amp;nbsp; control&amp;nbsp; 2&amp;nbsp; autos&amp;nbsp; juntos.&amp;nbsp; El&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;control lo puede realizar de a un par de autos a la vez.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;Una vez que los vehículos fueron revisados, pueden seguir su camino hacia la costa.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;En el caso de la ruta 2, si bien no hay controles, existe un peaje. En el peaje hay 3 cabinas y en&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;cada&amp;nbsp; cabina&amp;nbsp; atiende&amp;nbsp; una&amp;nbsp; persona de a un auto por vez. Luego de pagar el peaje, los autos&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot; color=&quot;#000000&quot;&gt;continúan hacia la costa.&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="48.5" y="2339" width="720" height="261" as="geometry"/>
+                </mxCell>
+                <mxCell id="381" value="&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;ENUNCIADO PARCIAL 1:&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="35" y="2313" width="182" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="382" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="26.5" y="2686" as="sourcePoint"/>
+                        <mxPoint x="26.5" y="2649" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="383" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="76.5" y="2654" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="384" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="383">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="26.5" y="2669" as="sourcePoint"/>
+                        <mxPoint x="63.5" y="2646" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="390" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="27.5" y="2838" as="sourcePoint"/>
+                        <mxPoint x="27.5" y="2801" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="391" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="77.5" y="2806" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="392" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="391">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="27.5" y="2821" as="sourcePoint"/>
+                        <mxPoint x="64.5" y="2798" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="55" y="2821"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="393" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Esperando&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;ingreso&lt;br&gt;rotonda 2&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="57.5" y="2829" width="66" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="394" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Llega&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;un&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 10px; background-color: transparent;&quot;&gt;auto&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 10px; background-color: transparent;&quot;&gt;arteria 2&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="2.5" y="2831" width="55" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="395" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Llega&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;un&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 10px; background-color: transparent;&quot;&gt;auto&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 10px; background-color: transparent;&quot;&gt;arteria 1&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="2.5" y="2686" width="55" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="396" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Esperando&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;ingreso&lt;br&gt;rotonda 1&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="58" y="2681" width="66" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="397" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="383">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="26.5" y="2669" as="sourcePoint"/>
+                        <mxPoint x="77" y="2669" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="56" y="2669"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="398" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="107.5" y="2668.66" as="sourcePoint"/>
+                        <mxPoint x="157" y="2746" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="126" y="2673"/>
+                            <mxPoint x="126" y="2742"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="401" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="108.5" y="2823" as="sourcePoint"/>
+                        <mxPoint x="157" y="2756" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="125" y="2817"/>
+                            <mxPoint x="125" y="2756"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="402" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="158.31" y="2769" as="sourcePoint"/>
+                        <mxPoint x="158.31" y="2732" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="403" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="159.5" y="2751" as="sourcePoint"/>
+                        <mxPoint x="193" y="2751" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="189" y="2751"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="404" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="194.5" y="2736" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="405" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;auto&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;ingresa&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;a rotonda&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="123.25" y="2761" width="60" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="406" value="10" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="193.75" y="2684" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="407" style="edgeStyle=none;html=1;exitX=0.017;exitY=0.567;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="406">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="155" y="2741" as="targetPoint"/>
+                        <mxPoint x="204" y="2676" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="175" y="2696"/>
+                            <mxPoint x="158" y="2703"/>
+                            <mxPoint x="147" y="2718"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="408" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="226" y="2750.71" as="sourcePoint"/>
+                        <mxPoint x="259.5" y="2751.05" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="255.5" y="2750.71"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="409" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="264" y="2769.5" as="sourcePoint"/>
+                        <mxPoint x="264" y="2732.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="410" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;auto&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;sale&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;de rotonda&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="2761" width="66" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="411" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;circulando&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;en rotonda&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="176.5" y="2761" width="66" height="41" as="geometry"/>
+                </mxCell>
+                <mxCell id="412" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;capacidad&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;de autos&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;disponibles&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="175.5" y="2629" width="68" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="413" value="" style="edgeStyle=none;html=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="267" y="2741" as="sourcePoint"/>
+                        <mxPoint x="223.75" y="2700" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="275" y="2712"/>
+                            <mxPoint x="266.75" y="2700"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="414" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="311" y="2736" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="417" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="265.5" y="2750.71" as="sourcePoint"/>
+                        <mxPoint x="309" y="2751" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="293" y="2750.71"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="418" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;circulando&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;en ruta&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="294" y="2764" width="64" height="41" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
