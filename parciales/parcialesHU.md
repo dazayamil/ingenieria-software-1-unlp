@@ -167,6 +167,58 @@ HU_03:
     ENTONCES el sistema deniega la solicitud e informa "Instructor alcanzo el maximo de clase por dia permitido"
 
 
+---------------------------------------------------------------------------------------------------------------
+
+### Parcial 4:  Cadena de gimnasios
+![Parcial 4](./29-11-2024%20Segunda%20Fecha.jpeg)
+
+- ROLES IDENTIFICADOS: PERSONAL DE RECURSOS HUMANOS, PERSONAL CONTABLE
+- REQUERIMIENTOS IDENTIFICADOS: CARGAR EMPLEADO, LIQUIDAR INDEMNIZACIÓN
+
+ENUNCIADO:
+Suponga que está modelando un módulo para la gestión del personal de una empresa.
+El personal de Recursos Humanos de la empresa debe poder registrar a nuevos empleados. Para ello, deberá ingresar los siguientes datos: nombre, apellido, edad, correo electrónico, DNI (no puede haber dos empleados con el mismo DNI), área, categoría (Administrativo o Mantenimiento) y oficina.
+Para ingresar a la categoría Mantenimiento, el empleado debe tener entre 18 y 40 años. Para ingresar a la categoría Administrativo, el empleado únicamente debe ser mayor de 18 años.
+Una vez registrado el nuevo empleado, el sistema deberá enviarle un correo electrónico de bienvenida junto con un código de empleado generado aleatoriamente. Ante cualquier intento fallido, el sistema deberá informar el motivo correspondiente.
+Por otro lado, el personal del área Contable de la empresa debe poder gestionar la liquidación de indemnización en caso de despido de un empleado. Para ello, deberá ingresar el DNI del empleado, el motivo del despido y el monto indemnizatorio.
+La indemnización solo podrá liquidarse a empleados con más de un año de antigüedad y por montos inferiores a los 10 millones de pesos.
+En caso de que la liquidación pueda llevarse a cabo, deberá registrarse la baja del empleado y enviarle por correo electrónico la notificación de despido, incluyendo el monto indemnizatorio y el motivo correspondiente. En caso contrario, el sistema deberá informar al personal contable por qué no es posible realizar la liquidación.
+
+HU_01:
+*ID:* Cargar empleado
+*TITULO*: Como personal de recursos humanos quiero cargar un nuevo empleado para incorporarlo a la empresa formalmente y asignarle sus datos de acceso.
+*REGLAS DE NEGOCIO:*
+    - Si el empleado es categoria "Administrativo", debe ser mayor a 18 años.
+    - Si el empleado es categoria "Mantenimiento", debe tener entre 18 y 40 años.
+    - El DNI del empleado debe ser único en el sistema (no duplicado).
+
+*CRITERIOS DE ACEPTACION:*
+*Escenario 1:* Carga exitosa de Administrativo
+    DADO el dni 41251053 no registrado en el sistema y con la edad de 21 años 
+    CUANDO el personal de recursos humanos ingresa nombre de empleado "Juan", apellido "Perez", edad 21, mail "juanperez@gmail.com", dni 41251053, area "Atencion al cliente", categoria "Administrativo", oficina "A2" y presiona "Cargar empleado"
+    ENTONCES el sistema registra al empleado, envia al mail ingresado mensaje de bienvenida y un codigo de empleado generado aleatoriamente.
+
+*Escenario 2:* Carga exitosa de Mantenimiento 
+    DADO el dni 35123456 no registrado en el sistema y con la edad de 30 años 
+    CUANDO el personal de recursos humanos ingresa nombre de empleado "Carlos", apellido "Gomez", edad 30, mail "carlosgomez@gmail.com", dni 35123456, area "Infraestructura", categoria "Mantenimiento", oficina "B1" y presiona "Cargar empleado" 
+    ENTONCES el sistema registra al empleado, envia al mail ingresado mensaje de bienvenida y un codigo de empleado generado aleatoriamente.
+
+*Escenario 3:* Carga fallida por dni duplicado 
+    DADO el dni 41251053 que ya se encuentra registrado en el sistema 
+    CUANDO el personal de recursos humanos ingresa nombre de empleado "Luis", apellido "Gomez", edad 30, mail "luisgomez@gmail.com", dni 41251053, area "Infraestructura", categoria "Mantenimiento", oficina "C1" y presiona "Cargar empleado"
+    ENTONCES el sistema deniega el registro e informa el motivo: "Error: El DNI ingresado ya pertenece a un empleado en el sistema" *CONSULTAR ACA*
+
+*Escenario 4:* Carga fallida por edad no requerido en mantenimiento
+    DADO un empleado con la edad de 45 años para el área de mantenimiento
+    CUANDO el personal de recursos humanos ingresa nombre de empleado "Pedro", apellido "Gonzalez", edad 45, mail "pedrogonzalez@gmail.com", dni 40051053, area "Logistica", categoria "Mantenimiento", oficina "D1" y presiona "Cargar empleado"
+    ENTONCES el sistema no realiza el registro e informa "La edad del empleado debe ser entre 18 a 40 años".
+
+*Escenario 5:* Carga fallida por edad no requerido en administrativo
+    DADO un empleado con la edad de 16 años para el área de administrativo
+    CUANDO el personal de recursos humanos ingresa nombre de empleado "Oscar", apellido "Pereyra", edad 16, mail "oscarpereyra@gmail.com", dni 30058553, area "Finanzas", categoria "Administracion", oficina "A3" y presiona "Cargar empleado"
+    ENTONCES el sistema no realiza el registro e informa "La edad del empleado debe ser mayor a 18 años".
+
+
 
 
 
