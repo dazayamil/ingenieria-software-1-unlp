@@ -219,7 +219,28 @@ HU_01:
     ENTONCES el sistema no realiza el registro e informa "La edad del empleado debe ser mayor a 18 años".
 
 
+HU_02:
+*ID:* Liquidar indemnización
+*TITULO*: Como personal contable quiero liquidar indemnización de un empleado despedido para registrar su baja formal en el sistema y notificar el pago correspondiente
+*REGLAS DE NEGOCIO:*
+    - El empleado debe tener al menos 1 año de antiguedad.
+    - El monto de indemnizacion debe ser inferior a 10 millones.
 
+*CRITERIOS DE ACEPTACION:*
+*Escenario 1:* Liquidacion éxitosa
+    DADO el dni 52690123, existente en el sistema, con 3 años de antiguedad y monto de indemnización de 8.000.000 
+    CUANDO el personal contable ingresa dni de empleado 52690123, motivo "Inasistencias", monto 8.000.000 y presionar "Liquidar indemnización" 
+    ENTONCES el sistema registra la baja del empleado, envia por mail la notificación de despido, incluyendo monto y el motivo. *PREGUNTAR*
+
+*Escenario 2:* Liquidacion fallida por incumplimiento de antiguedad
+    DADO el dni 41985060, existente en el sistema, con 8 meses de antiguedad.
+    CUANDO el personal contable ingresa dni de empleado 41985060, motivo "Daño material", monto 9.000.000 y presionar "Liquidar indemnización" 
+    ENTONCES el sistema informa al personal contable "Liquidacion fallida por incumplimiento de antiguedad"
+
+*Escenario 3:* Liquidacion fallida por monto superio al permitido
+    DADO el dni 31852070, existente en el sistema, con monto de indemnizacion de 12.000.000. *PREGUNTAR*
+    CUANDO el personal contable ingresa dni de empleado 31852070, motivo "Incumplimiento laboral", monto 12.000.000 y presionar "Liquidar indemnización" 
+    ENTONCES el sistema informa al personal contable "Liquidacion fallida por superar al monto establecido"
 
 
 
