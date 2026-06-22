@@ -244,3 +244,32 @@ HU_02:
 
 
 
+---------------------------------------------------------------------------------------------------------------
+
+### Parcial 5:  Modelar el manejo de créditos otorgados por un banco a sus clientes
+![Parcial 5](./HU_banco.webp)
+
+- ROLES IDENTIFICADOS: CLIENTE, GERERNTE
+- REQUERIMIENTOS IDENTIFICADOS: INICIAR TRAMITE DE SOLICITUD DE CRÉDITO, CONSULTAR ESTADO DE TRAMITE Y SOLICITAR LISTADO DE CRÉDITOS APROBADOS.
+
+
+HU_01:
+*ID:* Iniciar tramite de solicitud de crédito.
+*TITULO*: Como cliente quiero iniciar el trámite de solictud de crédito  para formalizar mi pedido de financiamiento y comenzar el proceso de evaluación crediticia.
+*REGLAS DE NEGOCIO:*
+    - El dni debe corresponder a un cliente del banco.
+    - El monto solicitado no debe superar los $400.000. 
+
+*CRITERIOS DE ACEPTACION:*
+*Escenario 1:* inicio de trámite exitoso
+    DADO el dni 412304820, correspondiente a un cliente del banco y monto solicitado por $350.000
+    CUANDO el cliente ingesa dni 412304820, nombre "Juan", apellido "Lopez", Mail "juanlopez@gmail.com", tipo de credito "Personal", monto solicitado $350.000 y presiona "iniciar trámite"
+    ENTONCES el sistema almacena el trámite e imprime el numero de comprobante correspondiente al trámite para el cliente.
+
+*Escenario 2:* inicio de trámite fallido por DNI no correspondiente al banco
+    DADO el dni 51963041, no correspondiente a un cliente del banco (*EL MONTO A SOLICITAR EL COMPLEMENTO AL DNI PARA PONER LAS 2 CONDICIONES SIN INPORTAR EL VALOR?*)
+    CUANDO el cliente ingesa dni 412304820, nombre "Lucas", apellido "Garcia", Mail "lucasgarcia@gmail.com", tipo de credito "Vivienda", monto solicitado $410.000 y presiona "iniciar trámite"
+    ENTONCES el 
+
+
+
