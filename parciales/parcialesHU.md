@@ -316,8 +316,26 @@ HU_03:
     - Las fechas ingresadas no pueden ser posteriores a la fecha actual
     - El rango de fechas debe ser cronológicamente coherente (FechInicio <= FechaFin)
 
+*CRITERIOS DE ACEPTACIÓN:*
+*Escenario 1:* Solicitud de cŕedito aprobados exitoso con créditos.
+    DADO el rango de fecha inicio: "22/06/2026", fin: "23/06/2026" permitidos para el sistema con créditos aprobados 
+    CUANDO el gerente ingresa fecha inicio "22/06/2026", fecha fin: "23/06/2026" y presiona "Solicitar créditos aprobados" 
+    ENTONCES el sistema muestra un listado cno los créditos aprobados.
 
+*Escenario 2:* Solicitud de cŕedito aprobados exitoso sin créditos.
+    DADO el rango de fecha inicio: "15/06/2026", fin: "16/06/2026" permitidos para el sistema pero sin créditos aprobados registrados. 
+    CUANDO el gerente ingresa fecha inicio "15/06/2026", fecha fin: "16/06/2026" y presiona "Solicitar créditos aprobados" 
+    ENTONCES el sistema informa "No hay créditos aprobados en las fechas ingresadas"
 
+*Escenario 3:* Solicitud de cŕedito aprobados fallido por fechas posteriores al actual.
+    DADO el rango de fecha inicio: "10/08/2026", fin: "12/08/2026" no permitidos para el sistema 
+    CUANDO el gerente ingresa fecha inicio "10/08/2026", fecha fin: "12/08/2026" y presiona "Solicitar créditos aprobados" 
+    ENTONCES el sistema informa "Las fechas ingresadas no son válidas".
+
+*Escenario 4:* Solicitud de cŕedito aprobados fallido por incoherencia en las fechas.
+    DADO el rango de fecha inicio: "10/06/2026", fin: "05/06/2026" incoherentes para el sistema 
+    CUANDO el gerente ingresa fecha inicio "10/06/2026", fecha fin: "05/06/2026" y presiona "Solicitar créditos aprobados" 
+    ENTONCES el sistema informa "Las fechas ingresadas no son válidas".
 
 
 
