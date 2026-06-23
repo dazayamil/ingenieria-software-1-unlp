@@ -110,7 +110,7 @@ HU_01:
     - el socio debe tener su cuota al dia.
     - Debe haber cupo disponible para la clase, dia y hora seleccionados.
 
-*CRITERIOS DE ACEPTACION:*
+*CRITERIOS DE ACEPTACIÓN:*
 *Escenario 1:* Solicitud de turno exitoso
     DADO un socio registrado que esta autenticado en el sistema y con la cuota del gimnasio al dia
     CUANDO el socio registrado ingresa sede "GYM 07", clase "funcional", dia "Lunes", hora "18:00" y presiona "Solicitar turno"
@@ -132,7 +132,7 @@ HU_02:
 *REGLAS DE NEGOCIO:*
     - La cancelacion solo es permitida con una anticipacion minima de 1 hora respecto al inicio de la clase.
 
-*CRITERIOS DE ACEPTACION:*
+*CRITERIOS DE ACEPTACIÓN:*
 *Escenario 1:* Cancelacion exitosa
     DADO un socio registrado que esta autenticado en el sistema y con las condiciones de cancelacion son adecuadas
     CUANDO el socio registrado ingresa dia "Lunes", hora "18:00" y presiona "Cancelar turno"
@@ -150,7 +150,7 @@ HU_03:
     - No se permiten clases superpuestas en la misma sala, dia y hora.
     - Un instructor no puede tener asignados mas de tres clases en un mismo dia
 
-*CRITERIOS DE ACEPTACION:*
+*CRITERIOS DE ACEPTACIÓN:*
 *Escenario 1:* Creacion de clase exitosa
     DADO un administrador registrado que esta autenticado en el sistema y la sala "A" esta libre el lunes a las 10hs
     CUANDO el administrador registrado ingresa sede "La plata", clase "Funcional", sala "A", dni instructor 91256413, capacidad maxima 20, dia "Lunes", hora "10:00" y presiona "Crear clase"
@@ -192,7 +192,7 @@ HU_01:
     - Si el empleado es categoria "Mantenimiento", debe tener entre 18 y 40 años.
     - El DNI del empleado debe ser único en el sistema (no duplicado).
 
-*CRITERIOS DE ACEPTACION:*
+*CRITERIOS DE ACEPTACIÓN:*
 *Escenario 1:* Carga exitosa de Administrativo
     DADO el dni 41251053 no registrado en el sistema y con la edad de 21 años 
     CUANDO el personal de recursos humanos ingresa nombre de empleado "Juan", apellido "Perez", edad 21, mail "juanperez@gmail.com", dni 41251053, area "Atencion al cliente", categoria "Administrativo", oficina "A2" y presiona "Cargar empleado"
@@ -226,7 +226,7 @@ HU_02:
     - El empleado debe tener al menos 1 año de antiguedad.
     - El monto de indemnizacion debe ser inferior a 10 millones.
 
-*CRITERIOS DE ACEPTACION:*
+*CRITERIOS DE ACEPTACIÓN:*
 *Escenario 1:* Liquidacion éxitosa
     DADO el dni 52690123, existente en el sistema, con 3 años de antiguedad y monto de indemnización de 8.000.000 
     CUANDO el personal contable ingresa dni de empleado 52690123, motivo "Inasistencias", monto 8.000.000 y presionar "Liquidar indemnización" 
@@ -260,7 +260,7 @@ HU_01:
     - El dni debe corresponder a un cliente del banco.
     - El monto solicitado no debe superar los $400.000. 
 
-*CRITERIOS DE ACEPTACION:*
+*CRITERIOS DE ACEPTACIÓN:*
 *Escenario 1:* inicio de trámite exitoso
     DADO el dni 412304820, correspondiente a un cliente del banco y monto solicitado por $350.000
     CUANDO el cliente ingesa dni 412304820, nombre "Juan", apellido "Lopez", Mail "juanlopez@gmail.com", tipo de credito "Personal", monto solicitado $350.000 y presiona "iniciar trámite de crédito"
@@ -275,6 +275,57 @@ HU_01:
     DADO el dni 52361024 correspondiente a un cliente y monto solicitado por $550.000
     CUANDO el cliente ingesa dni 52361024, nombre "Jorge", apellido "Diaz", Mail "jorgediaz@gmail.com", tipo de credito "Personal", monto solicitado $550.000 y presiona "iniciar trámite de crédito"
     ENTONCES el sistema informa "El monto solicitado excede al limite permitido".
+
+
+HU_02:
+*ID:* Consultar estado de trámite.
+*TITULO*: Como cliente quiero consultar el estado de trámite de mi solicitud de cŕedito para realizar un seguimiento de mi pedido y conocer su resolución final
+*REGLAS DE NEGOCIO:*
+    - Solo se permiten 3 intentos de error de numeros de comprobantes inexistentes
+
+*CRITERIOS DE ACEPTACIÓN:*
+*Escenario 1:* Consulta de estado de trámite exitoso
+    DADO un cliente sin fallos registrados y el numero de trámite "V000123" registrado en el sistema
+    CUANDO el cliente ingresa numero de trámite "V000123" y presiona "Consultar estado de trámite"
+    ENTONCES el sistema envia un informe completo con el estado del trámite.
+
+*Escenario 2:* Consulta de estado de trámite fallido por numero de tramite inexistente 1er fallo
+    DADO un cliente sin fallos registrados y el numero de trámite "B000456" no registrado en el sistema
+    CUANDO el cliente ingresa numero de trámite "B000456" y presiona "Consultar estado de trámite"
+    ENTONCES el sistema informa "Numero de trámite inexistente" y registra el 1er fallo para el cliente.
+
+*Escenario 3:* Consulta de estado de trámite fallido por numero de tramite inexistente 2er fallo
+    DADO un cliente con 1 fallo registrado y el numero de trámite "C000789" no registrado en el sistema
+    CUANDO el cliente ingresa numero de trámite "C000789" y presiona "Consultar estado de trámite"
+    ENTONCES el sistema informa "Numero de trámite inexistente" y registra el 2do fallo para el cliente.
+
+*Escenario 4:* Consulta de estado de trámite fallido por numero de tramite inexistente 3er fallo
+    DADO un cliente con 2 fallos registrados y el numero de trámite "D000159" no registrado en el sistema
+    CUANDO el cliente ingresa numero de trámite "D000159" y presiona "Consultar estado de trámite"
+    ENTONCES el sistema registra el 3er fallo para el cliente, bloquea la IP del mismo por 24 horas e informa "Usted ha excedido el número de consultas inválidas"
+
+*Escenario 5:* Consulta de estado de trámite fallido por bloqueo de IP
+    DADO un cliente con la IP actualmente bloquedada por exceso de intentos
+    CUANDO el cliente ingresa numero de trámite "A00753" y presiona "Consultar estado de trámite"
+    ENTONCES el sistema informa "Usted ha excedido el número de consultas inválidas"
+
+HU_03:
+*ID:* Solicitar créditos aprobados.
+*TITULO*: Como gerente quiero solicitar los créditos aprobados para analizar el desempeño del área económica y contar con información precisa para la toma de decisiones.
+*REGLAS DE NEGOCIO:*
+    - Las fechas ingresadas no pueden ser posteriores a la fecha actual
+    - El rango de fechas debe ser cronológicamente coherente (FechInicio <= FechaFin)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
