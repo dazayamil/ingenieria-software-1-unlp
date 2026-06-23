@@ -254,7 +254,7 @@ HU_02:
 
 
 HU_01:
-*ID:* Iniciar tramite de solicitud de crédito.
+*ID:* Iniciar trámite de solicitud de crédito.
 *TITULO*: Como cliente quiero iniciar el trámite de solictud de crédito  para formalizar mi pedido de financiamiento y comenzar el proceso de evaluación crediticia.
 *REGLAS DE NEGOCIO:*
     - El dni debe corresponder a un cliente del banco.
@@ -263,13 +263,18 @@ HU_01:
 *CRITERIOS DE ACEPTACION:*
 *Escenario 1:* inicio de trámite exitoso
     DADO el dni 412304820, correspondiente a un cliente del banco y monto solicitado por $350.000
-    CUANDO el cliente ingesa dni 412304820, nombre "Juan", apellido "Lopez", Mail "juanlopez@gmail.com", tipo de credito "Personal", monto solicitado $350.000 y presiona "iniciar trámite"
+    CUANDO el cliente ingesa dni 412304820, nombre "Juan", apellido "Lopez", Mail "juanlopez@gmail.com", tipo de credito "Personal", monto solicitado $350.000 y presiona "iniciar trámite de crédito"
     ENTONCES el sistema almacena el trámite e imprime el numero de comprobante correspondiente al trámite para el cliente.
 
-*Escenario 2:* inicio de trámite fallido por DNI no correspondiente al banco
-    DADO el dni 51963041, no correspondiente a un cliente del banco (*EL MONTO A SOLICITAR EL COMPLEMENTO AL DNI PARA PONER LAS 2 CONDICIONES SIN INPORTAR EL VALOR?*)
-    CUANDO el cliente ingesa dni 412304820, nombre "Lucas", apellido "Garcia", Mail "lucasgarcia@gmail.com", tipo de credito "Vivienda", monto solicitado $410.000 y presiona "iniciar trámite"
-    ENTONCES el 
+*Escenario 2:* inicio de trámite fallido por DNI no cliente
+    DADO el dni 51963041 no correspondiente a un cliente del banco 
+    CUANDO el cliente ingesa dni 51963041, nombre "Lucas", apellido "Garcia", Mail "lucasgarcia@gmail.com", tipo de credito "Vivienda", monto solicitado $320.000 y presiona "iniciar trámite de crédito"
+    ENTONCES el sistema envia al mail ingresado un instructivo para hacerse cliente del banco.
+
+*Escenario 3:* inicio de trámite fallido por monto no permitido
+    DADO el dni 52361024 correspondiente a un cliente y monto solicitado por $550.000
+    CUANDO el cliente ingesa dni 52361024, nombre "Jorge", apellido "Diaz", Mail "jorgediaz@gmail.com", tipo de credito "Personal", monto solicitado $550.000 y presiona "iniciar trámite de crédito"
+    ENTONCES el sistema informa "El monto solicitado excede al limite permitido".
 
 
 
